@@ -1,0 +1,11 @@
+{
+  "id": "5a709861cab44e68bfed5d2c2fe7fc0c",
+  "queues": {
+    // The number of queue messages to retrieve and process in
+    // parallel (per job function). The default is 16.
+    "batchSize": 1,
+    // The threshold at which a new batch of messages will be fetched.
+    // The default is batchSize/2.
+    "newBatchThreshold": 1
+  }
+}
