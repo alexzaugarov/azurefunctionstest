@@ -11,6 +11,8 @@ public static void Run(Message wordItem, TraceWriter log)
 
     var scrapResult = scrapper.Search(wordItem.Value);
 
+    log.Info($"Word to search: {wordItem.Value}");
+    log.Info($"Result title: {scrapResult.Title}");
     Console.WriteLine($"Word to search: {wordItem.Value}");
     Console.WriteLine($"Result title: {scrapResult.Title}");
 }
